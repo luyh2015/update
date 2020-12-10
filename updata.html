@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>文章内容更新后台</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/updata.css">
+    <!-- 代码高亮-->
+    <link rel="stylesheet" href="css/ltz_code.css">
+</head>
+
+<body>
+    <div class="layout-updata">
+        <!-- 写 -->
+        <div class="write " id="write">
+            <!-- head -->
+            <header>
+                <!-- <input type="text" id="input_title"> -->
+                <textarea id="input_title" rows="1" placeholder="标题"></textarea>
+                <textarea id="input_tag" rows="1" placeholder="标签用英文「 , 」分割"></textarea>
+            </header>
+            <!-- content -->
+            <textarea id="input_content" placeholder="内容"></textarea>
+        </div>
+        <!-- /写 -->
+        <!-- 看 -->
+        <div class="show">
+            <!-- head -->
+            <header>
+                <h1 id="title">标题</h1>
+                <h1 id="tag">标签用英文「 , 」分割</h1>
+
+            </header>
+            <!-- content -->
+            <div id="content">
+                内容
+            </div>
+        </div>
+        <!-- /看 -->
+    </div>
+    <!-- 提示框 -->
+    <div class="notification" id="notification">
+        每10秒，保存一次.
+    </div>
+    <!-- /提示框 -->
+    <script src="lib/av.js"></script>
+    <script src="lib/marked.js"></script>
+    <script src="lib/highlight.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/updata.js"></script>
+</body>
+
+</html>
